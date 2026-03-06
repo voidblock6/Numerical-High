@@ -10,21 +10,26 @@ public class HigherLowerGame {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         Random random = new Random();
-        
 
-        int savedScore = loadScore();
-        System.out.println("Welcome back! Your previous saved score: " + savedScore);
+        int[] scores = loadScores();
+        System.out.println("Welcome back! High score: " + scores[0] + " | Total score: " + scores[1]);
 
         int targetNumber = random.nextInt(100) + 1;
         int currentGuess = 0;
         int currentRoundScore = 100;
-        
-        System.out.println("I've picked a number between 1 and 100. Start guessing!");
 
+        System.out.println("I've picked a number between 1 and 100. Start guessing!");
 
         while (currentGuess != targetNumber) {
             System.out.print("Enter your guess: ");
-            currentGuess = scanner.nextInt();
+
+            try {
+                currentGuess = scanner.nextInt();
+            } catch (Exception e) {
+                System.out.println("Please enter a number!");
+                scanner.next();
+                continue;
+            }
 
             if (currentGuess < targetNumber) {
                 System.out.println("HIGHER!");
@@ -39,35 +44,37 @@ public class HigherLowerGame {
             if (currentRoundScore < 0) currentRoundScore = 0;
         }
 
-
         System.out.println("Your score for this round: " + currentRoundScore);
-        saveScore(currentRoundScore);
-        
+        saveScores(currentRoundScore, scores[1] + currentRoundScore);
+
         scanner.close();
     }
 
+    public static void saveScores(int roundScore, int totalScore) {
+        int highScore = loadScores()[0];
+        if (roundScore > highScore) highScore = roundScore;
 
-    public static void saveScore(int score) {
         try (FileWriter writer = new FileWriter(SCORE_FILE)) {
-            writer.write(String.valueOf(score));
-            System.out.println("Score saved to " + SCORE_FILE);
+            writer.write(highScore + "" + totalScore);
+            System.out.println("High score: " + highScore + " | Total score: " + totalScore);
         } catch (IOException e) {
             System.out.println("Error saving score: " + e.getMessage());
         }
     }
 
-
-    public static int loadScore() {
+    public static int[] loadScores() {
         File file = new File(SCORE_FILE);
-        if (!file.exists()) return 0; 
+        if (!file.exists()) return new int[]{0, 0};
 
         try (Scanner fileScanner = new Scanner(file)) {
             if (fileScanner.hasNextInt()) {
-                return fileScanner.nextInt();
+                int high = fileScanner.nextInt();
+                int total = fileScanner.hasNextInt() ? fileScanner.nextInt() : 0;
+                return new int[]{high, total};
             }
         } catch (IOException e) {
             System.out.println("Error loading score.");
         }
-        return 0;
+        return new int[]{0, 0};
     }
 }
