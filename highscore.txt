@@ -1,1 +1,0 @@
-highscore = 70 and total score = 70
