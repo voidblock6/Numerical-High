@@ -5,14 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de55d79f-8ac0-4aa7-bb59-66131e900489" name="Changes" comment="added a app icon, made the button for higher or lower functional">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/VoidArcade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lwjgl3/src/main/resources/return_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lwjgl3/src/main/resources/standard_black_bg.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/Higherorlower.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/HigherLowerScreen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/MainMenuScreen.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/java/net/voidblock/voidarcade/lwjgl3/Lwjgl3Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/java/net/voidblock/voidarcade/lwjgl3/Lwjgl3Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/libgdx128.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/libgdx16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/libgdx32.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/libgdx64.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/voidarcade_titlescreen.png" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/resources/voidarcade_titlescreen.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,20 +106,25 @@
     &quot;Gradle.VoidArcade:core [jar].executor&quot;: &quot;Run&quot;,
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/gg775/IdeaProjects/VoidArcade/lwjgl3/src/main/resources&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Rutger Koolma/IdeaProjects/VoidArcade/lwjgl3/src/main/resources&quot;,
     &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Rutger Koolma\IdeaProjects\VoidArcade\lwjgl3\src\main\resources" />
       <recent name="C:\Users\gg775\IdeaProjects\VoidArcade\lwjgl3\src\main\resources" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Rutger Koolma\IdeaProjects\VoidArcade\lwjgl3\src\main\resources" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.VoidArcade [run]">
@@ -191,7 +195,15 @@
       <option name="project" value="LOCAL" />
       <updated>1773503150336</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="added a app icon, made the button for higher or lower functional">
+      <option name="closed" value="true" />
+      <created>1775503536007</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1775503536007</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -207,6 +219,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="made project libGDX based" />
-    <option name="LAST_COMMIT_MESSAGE" value="made project libGDX based" />
+    <MESSAGE value="added a app icon, made the button for higher or lower functional" />
+    <option name="LAST_COMMIT_MESSAGE" value="added a app icon, made the button for higher or lower functional" />
   </component>
 </project>
