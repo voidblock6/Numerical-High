@@ -12,7 +12,7 @@ import com.badlogic.gdx.utils.ScreenUtils;
 import com.badlogic.gdx.utils.viewport.FitViewport;
 import com.badlogic.gdx.utils.viewport.ScreenViewport;
 
-public class HigherLowerScreen implements Screen {
+public class PlayScreen implements Screen {
     private final VoidArcade game;
     private Texture exitbutton;
     private Texture blackbg;
@@ -20,12 +20,11 @@ private Texture higherlowerskeleton;
     private FitViewport viewport;
     private ScreenViewport uiViewport;
     private BitmapFont customFont;
-    private int score = 000;
-
+    private int score = 1024;
     private float buttonSize = 96f;
     private float x, y;
 
-    public HigherLowerScreen(final VoidArcade game) {
+    public PlayScreen(final VoidArcade game) {
         this.game = game;
         FreeTypeFontGenerator generator = new FreeTypeFontGenerator(Gdx.files.internal("PixelOperator.ttf"));
         FreeTypeFontGenerator.FreeTypeFontParameter parameter = new FreeTypeFontGenerator.FreeTypeFontParameter();
@@ -41,7 +40,8 @@ private Texture higherlowerskeleton;
 
         blackbg = new Texture("standard_black_bg.png");
         exitbutton = new Texture("return_button.png");
-higherlowerskeleton = new Texture("higher_lower_skeleton.png");
+higherlowerskeleton = new Texture("game_bg.png");
+
 
         blackbg.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
         exitbutton.setFilter(Texture.TextureFilter.Nearest, Texture.TextureFilter.Nearest);
