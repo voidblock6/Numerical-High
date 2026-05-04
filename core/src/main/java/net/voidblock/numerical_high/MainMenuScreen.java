@@ -1,4 +1,4 @@
-package net.voidblock.voidarcade;
+package net.voidblock.numerical_high;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputAdapter;

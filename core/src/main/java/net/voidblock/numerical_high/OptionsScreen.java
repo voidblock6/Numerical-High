@@ -1,4 +1,4 @@
-package net.voidblock.voidarcade;
+package net.voidblock.numerical_high;
 
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputAdapter;
@@ -7,11 +7,11 @@ import com.badlogic.gdx.Screen;
 import com.badlogic.gdx.utils.ScreenUtils;
 
 
-public class InventoryScreen implements Screen {
+public class OptionsScreen implements Screen {
     private final NumericalHigh game;
 
 
-    public InventoryScreen(final NumericalHigh game) {
+    public OptionsScreen(final NumericalHigh game) {
         this.game = game;
 
     }
@@ -54,4 +54,3 @@ public class InventoryScreen implements Screen {
     @Override public void pause() {}
     @Override public void resume() {}
 }
-

@@ -5,10 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de55d79f-8ac0-4aa7-bb59-66131e900489" name="Changes" comment="prototyped a shield upgrade. better card system on the agenda">
+      <change afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/numerical_high/ButtonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/PlayScreen.java" beforeDir="false" afterPath="$PROJECT_DIR$/core/src/main/java/net/voidblock/voidarcade/PlayScreen.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/game_bg.png" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/resources/game_bg.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lwjgl3/src/main/resources/shield_upgrade_card.png" beforeDir="false" afterPath="$PROJECT_DIR$/lwjgl3/src/main/resources/shield_upgrade_card.png" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +169,10 @@
       <RunAsTest>false</RunAsTest>
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="Gradle.VoidArcade [run]" />
+      <item itemvalue="Gradle.VoidArcade:core [jar]" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.VoidArcade [run]" />

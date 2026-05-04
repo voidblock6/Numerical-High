@@ -1,8 +1,8 @@
-package net.voidblock.voidarcade.lwjgl3;
+package net.voidblock.numerical_high.lwjgl3;
 
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3Application;
 import com.badlogic.gdx.backends.lwjgl3.Lwjgl3ApplicationConfiguration;
-import net.voidblock.voidarcade.NumericalHigh;
+import net.voidblock.numerical_high.NumericalHigh;
 
 /** Launches the desktop (LWJGL3) application. */
 public class Lwjgl3Launcher {

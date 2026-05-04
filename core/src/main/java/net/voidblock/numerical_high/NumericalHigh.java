@@ -1,4 +1,4 @@
-package net.voidblock.voidarcade;
+package net.voidblock.numerical_high;
 
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.graphics.g2d.SpriteBatch;
